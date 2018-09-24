@@ -1,0 +1,14 @@
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.deps.json
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.runtimeconfig.json
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.runtimeconfig.dev.json
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.pdb
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csprojAssemblyReference.cache
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csproj.CoreCompileInputs.cache
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.AssemblyInfoInputs.cache
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.AssemblyInfo.cs
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.pdb
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\Algorithms.Lib.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\Algorithms.Lib.pdb
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csproj.CopyComplete
