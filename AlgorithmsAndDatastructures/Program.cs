@@ -8,9 +8,12 @@ namespace AlgorithmsAndDatastructures
     {
         static void Main(string[] args)
         {
-            //DemoSelectionSort();
+            DemoSelectionSort();
+            Console.ReadKey();
+            Console.Clear();
             DemoMatrixTransformation();
             Console.ReadKey();
+            Console.Clear();
         }
 
         private static void DemoMatrixTransformation()
@@ -24,7 +27,7 @@ namespace AlgorithmsAndDatastructures
                 };
 
             Print(i, "Before Transformation");
-            MatrixTransformations.Transform90DegreeInPlace(ref i);
+            MatrixTransformations.Transform90DegreeInPlace(i);
             Print(i, "After Transformation");
         }
 
