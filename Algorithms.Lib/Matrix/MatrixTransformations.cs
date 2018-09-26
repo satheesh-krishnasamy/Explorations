@@ -2,14 +2,14 @@
 
 namespace Algorithms.Lib.Matrix
 {
-    public class MatrixTransformations
+    public static class MatrixTransformations
     {
         /// <summary>
         /// Transform the matrix 90 degree in place.
         /// </summary>
         /// <param name="matrix">The matrix.</param>
-        /// <exception cref="Exception">Not supported. This method work only when the rows/columns are same in number.</exception>
-        public static void Transform90DegreeInPlace(int[,] matrix)
+        /// <exception cref="NotSupportedException">Not supported. This method work only when the rows/columns are same in number.</exception>
+        public static void Transform90DegreeInPlace<T>(T[,] matrix)
         {
             const int FIRST_DIMENSION = 0;
             const int SECOND_DIMENSION = 1;
@@ -18,8 +18,8 @@ namespace Algorithms.Lib.Matrix
             var columnsCount = matrix.GetLength(SECOND_DIMENSION);
 
             // this method works only on the matrix having same number or rows and columns
-            if (matrix.GetLength(0) != matrix.GetLength(1))
-                throw new Exception("Not supported");
+            if (rowsCount != columnsCount)
+                throw new NotSupportedException($"The matrix should have same number of rows and columns. Current Rows = {columnsCount} and columns = {columnsCount}.");
 
             for (int columnToTranspose = columnsCount - 1; columnToTranspose >= 0; columnToTranspose--)
             {
@@ -27,7 +27,7 @@ namespace Algorithms.Lib.Matrix
             }
         }
 
-        private static void TransformInternal(int[,] matrix, int columnIndexToTranspose)
+        private static void TransformInternal<T>(T[,] matrix, int columnIndexToTranspose)
         {
             // rows and columns count are same
             var totalRowsInWholeMatrix = matrix.GetLength(0);

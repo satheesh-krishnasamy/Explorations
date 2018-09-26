@@ -1,0 +1,17 @@
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.Tests.deps.json
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.Tests.runtimeconfig.json
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.Tests.runtimeconfig.dev.json
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.Tests.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.Tests.pdb
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\bin\Debug\netcoreapp2.1\Algorithms.Lib.pdb
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.csprojAssemblyReference.cache
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.csproj.CoreCompileInputs.cache
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.AssemblyInfoInputs.cache
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.AssemblyInfo.cs
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.csproj.CopyComplete
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.dll
+E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDataStructures.Tests\obj\Debug\netcoreapp2.1\Algorithms.Lib.Tests.pdb

@@ -1,7 +1,6 @@
 E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\bin\Debug\netstandard2.0\Algorithms.Lib.deps.json
 E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\bin\Debug\netstandard2.0\Algorithms.Lib.dll
 E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\bin\Debug\netstandard2.0\Algorithms.Lib.pdb
-E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.csprojAssemblyReference.cache
 E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.csproj.CoreCompileInputs.cache
 E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.AssemblyInfoInputs.cache
 E:\POCs\AlgorithmsAndDatastructures\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.AssemblyInfo.cs

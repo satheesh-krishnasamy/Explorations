@@ -18,17 +18,16 @@ namespace AlgorithmsAndDatastructures
 
         private static void DemoMatrixTransformation()
         {
-            int[,] i = new int[,] {
-                    {10, 20, 30, 40, 5},
-                    {20, 30, 40, 50, 7},
-                    {20, 30, 40, 50, 8},
-                    {20, 30, 40, 50, 0},
-                    {100, 200, 300, 400, 500}
+            int[,] source = new int[,] {
+                    {10, 20, 30, 40},
+                    {40, 50, 60, 70},
+                    {80, 90, 100, 110},
+                    {120, 130, 140, 150}
                 };
 
-            Print(i, "Before Transformation");
-            MatrixTransformations.Transform90DegreeInPlace(i);
-            Print(i, "After Transformation");
+            Print(source, "Before Transformation");
+            MatrixTransformations.Transform90DegreeInPlace(source);
+            Print(source, "After Transformation");
         }
 
         private static void DemoSelectionSort()
