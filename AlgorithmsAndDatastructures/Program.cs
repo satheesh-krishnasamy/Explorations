@@ -8,12 +8,32 @@ namespace AlgorithmsAndDatastructures
     {
         static void Main(string[] args)
         {
-            DemoSelectionSort();
-            Console.ReadKey();
+            //DemoSelectionSortOnStringNumbers();
+            //Console.ReadKey();
+            //Console.Clear();
+            //DemoMatrixTransformation();
+            //Console.ReadKey();
             Console.Clear();
-            DemoMatrixTransformation();
+            //DemoBubbleSort();
+            DemoSelectionSortOnNumbers();
             Console.ReadKey();
-            Console.Clear();
+
+        }
+
+        private static void DemoBubbleSort()
+        {
+            var inputArray = new int[] { 100, 15, 20, 5, 0, 101 };
+            Print(inputArray, "Before sorting: ");
+            BubbleSort.Sort(inputArray, true);
+            Print(inputArray, "After Bubble sorting: ");
+        }
+
+        private static void DemoSelectionSortOnNumbers()
+        {
+            var inputArray = new int[] { 100, 15, 20, 5, 0, 101 };
+            Print(inputArray, "Before sorting: ");
+            SelectionSort.Sort(inputArray, true);
+            Print(inputArray, "After selection sorting: ");
         }
 
         private static void DemoMatrixTransformation()
@@ -30,7 +50,7 @@ namespace AlgorithmsAndDatastructures
             Print(source, "After Transformation");
         }
 
-        private static void DemoSelectionSort()
+        private static void DemoSelectionSortOnStringNumbers()
         {
             var numberStrings = new string[] { "-1.1", "-2.2", "-1000", "10.100", "-1.0", "10.1", "10.0001", "10.5", "11", "100", "9" };
             var numbers = new double[] { -1.1, -2.2, -1000, 10.100, -1.0, 10.1, 10.0001, 10.5, 11, 100, 9 };
@@ -84,3 +104,4 @@ namespace AlgorithmsAndDatastructures
         }
     }
 }
+
