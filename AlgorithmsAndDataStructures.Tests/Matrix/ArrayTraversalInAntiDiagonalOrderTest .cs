@@ -6,6 +6,9 @@ using System.Text;
 
 namespace Algorithms.Lib.Tests.Matrix
 {
+    /// <summary>
+    /// Test class to test the array traversal method - Traverse by anti-diagonal order
+    /// </summary>
     [TestClass]
     public class ArrayTraversalInAtiDiagonalOrderTest
     {
