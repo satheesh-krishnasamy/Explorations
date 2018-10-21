@@ -12,3 +12,17 @@ E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcor
 E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\Algorithms.Lib.dll
 E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\Algorithms.Lib.pdb
 E:\POCs\AlgorithmsAndDatastructures\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csproj.CopyComplete
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.deps.json
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.runtimeconfig.json
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.runtimeconfig.dev.json
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.dll
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.pdb
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\Algorithms.Lib.dll
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\bin\Debug\netcoreapp2.1\Algorithms.Lib.pdb
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csprojAssemblyReference.cache
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csproj.CoreCompileInputs.cache
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.AssemblyInfoInputs.cache
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.AssemblyInfo.cs
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.csproj.CopyComplete
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.dll
+E:\POCs\PullRequests\ADS_PR2\AlgorithmsAndDatastructures\obj\Debug\netcoreapp2.1\AlgorithmsAndDatastructures.pdb
