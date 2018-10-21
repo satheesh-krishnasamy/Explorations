@@ -2,7 +2,7 @@ using Algorithms.Lib.Matrix;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Algorithms.Lib.Tests
+namespace Algorithms.Lib.Tests.Matrix
 {
     [TestClass]
     public class MatrixTransformationsTest

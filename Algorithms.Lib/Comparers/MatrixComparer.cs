@@ -45,5 +45,28 @@ namespace Algorithms.Lib.Matrix
 
             return true;
         }
+
+        public static bool AreSame<T>(T[] source, T[] target)
+        {
+            // rows must be equal
+            if (source.GetLength(0) != target.GetLength(0))
+                return false;
+
+            var elementCount = source.GetLength(0);
+
+            for (var i = 0; i < elementCount; i++)
+            {
+                if (source == null && target != null)
+                    return false;
+                else if (source != null && target == null)
+                    return false;
+                else if (source == null && target == null)
+                    continue;
+                if (!source[i].Equals(target[i]))
+                    return false;
+            }
+
+            return true;
+        }
     }
 }

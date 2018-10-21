@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\POCs\\AlgorithmsAndDatastructures\\Algorithms.Lib\\Algorithms.Lib.csproj",
+      "projectUniqueName": "E:\\POCs\\PullRequests\\ADS_PR2\\Algorithms.Lib\\Algorithms.Lib.csproj",
       "projectName": "Algorithms.Lib",
-      "projectPath": "E:\\POCs\\AlgorithmsAndDatastructures\\Algorithms.Lib\\Algorithms.Lib.csproj",
+      "projectPath": "E:\\POCs\\PullRequests\\ADS_PR2\\Algorithms.Lib\\Algorithms.Lib.csproj",
       "packagesPath": "C:\\Users\\satheesh.krishnasamy\\.nuget\\packages\\",
-      "outputPath": "E:\\POCs\\AlgorithmsAndDatastructures\\Algorithms.Lib\\obj\\",
+      "outputPath": "E:\\POCs\\PullRequests\\ADS_PR2\\Algorithms.Lib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

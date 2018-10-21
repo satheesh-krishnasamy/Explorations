@@ -5745,11 +5745,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\POCs\\AlgorithmsAndDatastructures\\AlgorithmsAndDataStructures.Tests\\Algorithms.Lib.Tests.csproj",
+      "projectUniqueName": "E:\\POCs\\PullRequests\\ADS_PR2\\AlgorithmsAndDataStructures.Tests\\Algorithms.Lib.Tests.csproj",
       "projectName": "Algorithms.Lib.Tests",
-      "projectPath": "E:\\POCs\\AlgorithmsAndDatastructures\\AlgorithmsAndDataStructures.Tests\\Algorithms.Lib.Tests.csproj",
+      "projectPath": "E:\\POCs\\PullRequests\\ADS_PR2\\AlgorithmsAndDataStructures.Tests\\Algorithms.Lib.Tests.csproj",
       "packagesPath": "C:\\Users\\satheesh.krishnasamy\\.nuget\\packages\\",
-      "outputPath": "E:\\POCs\\AlgorithmsAndDatastructures\\AlgorithmsAndDataStructures.Tests\\obj\\",
+      "outputPath": "E:\\POCs\\PullRequests\\ADS_PR2\\AlgorithmsAndDataStructures.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5768,8 +5768,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\POCs\\AlgorithmsAndDatastructures\\Algorithms.Lib\\Algorithms.Lib.csproj": {
-              "projectPath": "E:\\POCs\\AlgorithmsAndDatastructures\\Algorithms.Lib\\Algorithms.Lib.csproj"
+            "E:\\POCs\\PullRequests\\ADS_PR2\\Algorithms.Lib\\Algorithms.Lib.csproj": {
+              "projectPath": "E:\\POCs\\PullRequests\\ADS_PR2\\Algorithms.Lib\\Algorithms.Lib.csproj"
             }
           }
         }
