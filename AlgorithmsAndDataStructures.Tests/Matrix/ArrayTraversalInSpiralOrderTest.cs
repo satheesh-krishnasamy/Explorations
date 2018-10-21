@@ -7,7 +7,7 @@ using System.Text;
 namespace Algorithms.Lib.Tests.Matrix
 {
     /// <summary>
-    /// Test class to test the array traversal method - Traverse by Spiral order
+    /// Test class to test the array traversal method - Traverse in Spiral order
     /// </summary>
     [TestClass]
     public class ArrayTraversalInSpiralOrderTest
