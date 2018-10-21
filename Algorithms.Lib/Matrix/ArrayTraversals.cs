@@ -4,8 +4,17 @@ using System.Text;
 
 namespace Algorithms.Lib.Matrix
 {
+    /// <summary>
+    /// Class implements array traversal methods
+    /// </summary>
     public static class ArrayTraversals
     {
+        /// <summary>
+        /// Traverses the array in anti diagonal order.
+        /// </summary>
+        /// <param name="a">array</param>
+        /// <returns>Traversed array elements</returns>
+        /// <exception cref="NotSupportedException">Thrown when the number of rows and columns mismatch.</exception>
         public static IList<int[]> TraverseArrayInAntiDiagonalOrder(int[,] a)
         {
             IList<int[]> result = new List<int[]>();
