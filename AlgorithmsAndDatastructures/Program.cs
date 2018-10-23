@@ -58,14 +58,20 @@ namespace AlgorithmsAndDatastructures
 
         private static void PrintMenu(IList<DemoScreenDisplay> demos)
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
+            var colorToggle = false;
             Console.Clear();
             Console.WriteLine($"0. Exit.");
             for (int i = 0; i < demos.Count; i++)
             {
+                Console.ForegroundColor = colorToggle ? ConsoleColor.White : ConsoleColor.Yellow;
+                colorToggle = !colorToggle;
                 Console.WriteLine($"{i + 1}. {demos[i].DisplayText}.");
             }
+
+            Console.ForegroundColor = ConsoleColor.White;
         }
+
+
 
         private static void DemoBubbleSort()
         {
@@ -78,10 +84,31 @@ namespace AlgorithmsAndDatastructures
         private static void DemoHighestSumSubArray()
         {
             //var inputArray = new int[] { 100, 15, 20, -5, 0, 101 };
-            var inputArray = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            //var inputArray = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            var inputArray = new int[] { -4, 0, -5, 0 };
+
 
             Print(inputArray, "All elements in the array: ");
-            SubArray.FindMaxSumOfContiguousSubArray(inputArray);
+            var result = SubArray.FindMaxSumOfContiguousSubArray(inputArray);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(); Console.WriteLine();
+            Console.WriteLine($"Highest sum: {result.Sum}");
+
+            for (int si = 0; si < result.SubArrayIndexes.Count; si++)
+            {
+                Console.Write($"Sub-array #{si + 1} is [{result.SubArrayIndexes[si].Item1} to {result.SubArrayIndexes[si].Item2}] with length {result.SubArrayIndexes[si].Item2 - result.SubArrayIndexes[si].Item1 + 1} : ");
+                for (int i = result.SubArrayIndexes[si].Item1; i <= result.SubArrayIndexes[si].Item2; i++)
+                {
+                    Console.Write(inputArray[i].ToString());
+
+                    if (i + 1 <= result.SubArrayIndexes[si].Item2)
+                    {
+                        Console.Write(" ,");
+                    }
+                }
+                Console.WriteLine();
+            }
         }
 
         private static void DemoSelectionSortOnNumbers()
