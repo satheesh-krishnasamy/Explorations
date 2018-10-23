@@ -1,40 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Algorithms.Lib.Matrix.Model;
+using System;
 
 namespace Algorithms.Lib.Matrix
 {
+    /// <summary>
+    /// Class provides methods that work with subarray of an array.
+    /// </summary>
     public static class SubArray
     {
-        public static void FindMaxSumOfContiguousSubArray(int[] a)
+        public static SubArraySumResult FindMaxSumOfContiguousSubArray(int[] a)
         {
-            int subArraySize = a.Length - 1,
-                highestSumSubArrayStartIndex = 0,
-                highestSumSubArrayEndIndex = 0;
-            long subArrayHighestSum = 0;
+            int subArraySize = a.Length - 1;
+
+            SubArraySumResult result = new SubArraySumResult();
+            if (a.Length == 1)
+            {
+                result.Sum = a[0];
+                result.SubArrayIndexes.Add(new Tuple<int, int>(0, 0));
+            }
+
 
             for (int currSubArraySize = subArraySize; currSubArraySize > 0 && currSubArraySize < a.Length; currSubArraySize--)
             {
-                for (int j = 0; j + currSubArraySize < a.Length; j++)
+                for (int j = 0; (j + currSubArraySize - 1) < a.Length; j++)
                 {
                     var currSubArraySum = GetSum(a, j, j + currSubArraySize - 1);
-                    if (currSubArraySum > subArrayHighestSum)
+                    if (currSubArraySum > result.Sum)
                     {
-                        subArrayHighestSum = currSubArraySum;
-                        highestSumSubArrayStartIndex = j;
-                        highestSumSubArrayEndIndex = j + currSubArraySize - 1;
+                        result.Sum = currSubArraySum;
+                        result.SubArrayIndexes.Clear();
+                        result.SubArrayIndexes.Add(new Tuple<int, int>(j, j + currSubArraySize - 1));
+                    }
+                    else if (currSubArraySum == result.Sum)
+                    {
+                        result.SubArrayIndexes.Add(new Tuple<int, int>(j, j + currSubArraySize - 1));
                     }
                 }
             }
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(); Console.WriteLine();
-            Console.WriteLine($"Highest sum: {subArrayHighestSum}");
-            Console.Write("Array is ");
-            for (int i = highestSumSubArrayStartIndex; i <= highestSumSubArrayEndIndex; i++)
-            {
-                Console.Write(a[i].ToString() + ", ");
-            }
+            return result;
         }
 
         private static long GetSum(int[] array, int startIndex, int endIndex)

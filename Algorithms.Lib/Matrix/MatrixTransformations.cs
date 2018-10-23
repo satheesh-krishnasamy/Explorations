@@ -2,6 +2,9 @@
 
 namespace Algorithms.Lib.Matrix
 {
+    /// <summary>
+    /// Class provides methods for matrix transformation
+    /// </summary>
     public static class MatrixTransformations
     {
         /// <summary>
