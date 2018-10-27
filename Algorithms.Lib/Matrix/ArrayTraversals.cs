@@ -14,25 +14,31 @@ namespace Algorithms.Lib.Matrix
         /// </summary>
         /// <param name="a">array</param>
         /// <returns>Traversed array elements</returns>
-        /// <exception cref="NotSupportedException">Thrown when the number of rows and columns mismatch.</exception>
         public static IList<int[]> TraverseArrayInAntiDiagonalOrder(int[,] a)
         {
             IList<int[]> result = new List<int[]>();
             var rows = a.GetLength(0);
             var cols = a.GetLength(1);
 
-            if (rows != cols)
-                throw new NotSupportedException($"This method works only if the rows and columns are same. Rows = {rows}, Columns = {cols}.");
-
             //Console.WriteLine("[");
-            for (int i = 0; i < cols; i++)
+            for (int currentColIndexInspected = 0;
+                currentColIndexInspected < cols;
+                currentColIndexInspected++)
             {
-                var resultRow = new int[i + 1];
+                int[] resultRow;
+
+                if (currentColIndexInspected + 1 < rows)
+                    resultRow = new int[currentColIndexInspected + 1];
+                else
+                    resultRow = new int[rows];
+
                 //Console.Write("[");
-                for (int j = 0, k = i; k > -1; k--, j++)
+                for (int rowIndexBeingVisited = 0, k = currentColIndexInspected;
+                    k > -1 && rowIndexBeingVisited < rows;
+                    k--, rowIndexBeingVisited++)
                 {
                     //Console.Write("{0}", a[j, k]);
-                    resultRow[j] = a[j, k];
+                    resultRow[rowIndexBeingVisited] = a[rowIndexBeingVisited, k];
 
                     //if (k - 1 > -1)
                     //    Console.Write(",");
@@ -41,25 +47,37 @@ namespace Algorithms.Lib.Matrix
                 result.Add(resultRow);
             }
 
-            for (int i = 1; i < rows; i++)
+            for (int currentRowIndexBeingVisited = 1;
+                currentRowIndexBeingVisited < rows;
+                currentRowIndexBeingVisited++)
             {
-                var resultRow = new int[rows - i];
+                // To save the space, go with list (expandable array). The number of elements are not well known in advance
+                var resultRow = new List<int>();
                 //Console.Write("[");
-                for (int j = i, k = cols - 1; j < rows; k--, j++)
+                for (int j = currentRowIndexBeingVisited, k = cols - 1;
+                    j < rows && k > -1;
+                    k--, j++)
                 {
                     //Console.Write("{0}", a[j, k]);
 
                     //if (j + 1 < rows)
                     //    Console.Write(",");
-                    resultRow[j - i] = a[j, k];
+                    resultRow.Add(a[j, k]);
                 }
                 //Console.WriteLine("]");
-                result.Add(resultRow);
+                // Convert and add the array
+                result.Add(resultRow.ToArray());
             }
             //Console.WriteLine("]");
 
             return result;
         }
+
+        /// <summary>
+        /// Traverses the array in spiral order.
+        /// </summary>
+        /// <param name="a">Input array</param>
+        /// <returns>Array traversed in Spiral order</returns>
         public static int[] TraverseArrayInSpiralOrder(int[,] a)
         {
             var rows = a.GetLength(0);
@@ -164,5 +182,5 @@ namespace Algorithms.Lib.Matrix
         }
     }
 
-    
+
 }

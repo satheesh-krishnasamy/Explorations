@@ -14,4 +14,3 @@ E:\POCs\PullRequests\ADS_PR2\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.
 E:\POCs\PullRequests\ADS_PR2\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.AssemblyInfo.cs
 E:\POCs\PullRequests\ADS_PR2\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.dll
 E:\POCs\PullRequests\ADS_PR2\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.pdb
-E:\POCs\PullRequests\ADS_PR2\Algorithms.Lib\obj\Debug\netstandard2.0\Algorithms.Lib.csprojAssemblyReference.cache

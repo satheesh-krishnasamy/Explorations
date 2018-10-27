@@ -33,8 +33,6 @@ namespace Algorithms.Lib.Tests.Matrix
             };
 
             ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
-
-
         }
 
         private void ArrayAntiDiagonalOrderTestMethod(int[,] inputArray, IList<int[]> expectedResult)
@@ -50,7 +48,6 @@ namespace Algorithms.Lib.Tests.Matrix
         }
 
         [TestMethod]
-        [ExpectedException(typeof(NotSupportedException))]
         public void TestAntiDiagonalTraversalWithMatrix_2_X_5()
         {
             int[,] inputArray = new int[,] {
@@ -73,6 +70,20 @@ namespace Algorithms.Lib.Tests.Matrix
             ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
         }
 
+
+        [TestMethod]
+        public void TestAntiDiagonalTraversalWithMatrix_0_X_0()
+        {
+            int[,] inputArray = new int[,] {
+                };
+
+            IList<int[]> expectedResult = new List<int[]>
+            {
+            };
+
+            ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
+        }
+
         [TestMethod]
         public void TestAntiDiagonalTraversalWithMatrix_1_X_1()
         {
@@ -89,20 +100,25 @@ namespace Algorithms.Lib.Tests.Matrix
         }
 
         [TestMethod]
-        public void TestAntiDiagonalTraversalWithMatrix_0_X_0()
+        public void TestAntiDiagonalTraversalWithMatrix_2_X_2()
         {
             int[,] inputArray = new int[,] {
+                {1, 2, 3}, {4, 5, 6}
                 };
 
             IList<int[]> expectedResult = new List<int[]>
             {
+                new int[] { 1 },
+                new int[] { 2, 4},
+                new int[] { 3, 5 },
+                new int[] { 6 }
             };
 
             ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
         }
 
+
         [TestMethod]
-        [ExpectedException(typeof(NotSupportedException))]
         public void TestAntiDiagonalTraversalWithMatrix_5_X_1()
         {
             int[,] inputArray = new int[,] {
@@ -113,8 +129,70 @@ namespace Algorithms.Lib.Tests.Matrix
             {
                 new int[] { 1 },
                 new int[] {5 },
-                new int[] {6 }, new int[] {7 },
+                new int[] {6 },
+                new int[] {7 },
                 new int[] {10 }
+            };
+
+            ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
+        }
+
+        [TestMethod]
+        public void TestAntiDiagonalTraversalWithMatrix_5_X_2()
+        {
+            int[,] inputArray = new int[,] {
+                { 1, 2 },{3, 4 },{5,6 },{7,8 },{9, 10 }
+                };
+
+            IList<int[]> expectedResult = new List<int[]>
+            {
+                new int[] { 1 },
+                new int[] {2, 3},
+                new int[] { 4, 5 },
+                new int[] { 6, 7 },
+                new int[] { 8, 9 },
+                new int[] {10}
+            };
+
+            ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
+        }
+
+
+        [TestMethod]
+        public void TestAntiDiagonalTraversalWithMatrix_5_X_3()
+        {
+            int[,] inputArray = new int[,] {
+                { 1, 2, 3 },{4, 5, 6 },{ 7, 8, 9},{ 10, 11, 12},{13, 14, 15}
+                };
+
+            IList<int[]> expectedResult = new List<int[]>
+            {
+                new int[] { 1 },
+                new int[] { 2, 4},
+                new int[] { 3, 5, 7 },
+                new int[] { 6, 8, 10},
+                new int[] { 9, 11, 13 },
+                new int[] { 12, 14},
+                new int[] { 15 }
+            };
+
+            ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
+        }
+
+        [TestMethod]
+        public void TestAntiDiagonalTraversalWithMatrix_1_X_5()
+        {
+            int[,] inputArray = new int[,] {
+                { 1, 2, 3,4, 5 }
+                };
+
+            IList<int[]> expectedResult = new List<int[]>
+            {
+                new int[] { 1 },
+                new int[] {2},
+                new int[] {3 },
+                new int[] {4 },
+                new int[] {5 }
             };
 
             ArrayAntiDiagonalOrderTestMethod(inputArray, expectedResult);
