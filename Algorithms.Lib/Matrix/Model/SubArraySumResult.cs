@@ -18,7 +18,7 @@ namespace Algorithms.Lib.Matrix.Model
         /// <value>
         /// The sum.
         /// </value>
-        public long Sum { get; set; }
+        public long Sum { get; set; } = long.MinValue;
 
         /// <summary>
         /// Gets or sets the sub array indexes.
