@@ -138,12 +138,6 @@ namespace Algorithms.Lib.Matrix
         public static SubArraySumResult FindMaxSumSubArrayByBruteForceMethod(int[] a)
         {
             SubArraySumResult result = new SubArraySumResult();
-            //if (a.Length > 0)
-            //{
-            //    result.Sum = a[0];
-            //    result.SubArrayIndexes.Add(new Tuple<int, int>(0, 0));
-            //}
-
 
             int lastSubArrayStartIndex = 0;
             for (int i = 0; i < a.Length; i++)
@@ -159,6 +153,49 @@ namespace Algorithms.Lib.Matrix
                         lastSubArrayStartIndex = i;
                     }
                     else if (currSubArraySum == result.Sum && lastSubArrayStartIndex != i)
+                    {
+                        /* Reason for the check => (lastSubArrayStartIndex != i):
+                         * If the current subarray with max-sum includes 
+                         * the previously added subarray
+                         * then do not add the subarray as max-sum subarray
+                         * Example: 0-3 = 10 and 0-5 = 10 then
+                         * do no consider the second sub-array ranging 0-5 as max-sum subarray.
+                         */
+                        result.SubArrayIndexes.Add(new Tuple<int, int>(i, j));
+                        lastSubArrayStartIndex = i;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Finds the maximum product sub array by brute force method.
+        /// </summary>
+        /// <param name="a">input array.</param>
+        /// <returns>Returns sub array [start index, end index] having maximum product</returns>
+        public static SubArrayProductResult FindMaxProductSubArrayByBruteForceMethod(int[] a)
+        {
+            if (a == null || a.Length == 0)
+                return null;
+
+            SubArrayProductResult result = new SubArrayProductResult();
+
+            int lastSubArrayStartIndex = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i; j < a.Length; j++)
+                {
+                    var currSubArraySum = GetProduct(a, i, j);
+                    if (currSubArraySum > result.ProductSum)
+                    {
+                        result.ProductSum = currSubArraySum;
+                        result.SubArrayIndexes.Clear();
+                        result.SubArrayIndexes.Add(new Tuple<int, int>(i, j));
+                        lastSubArrayStartIndex = i;
+                    }
+                    else if (currSubArraySum == result.ProductSum /*&& lastSubArrayStartIndex != i*/)
                     {
                         /* Reason for the check => (lastSubArrayStartIndex != i):
                          * If the current subarray with max-sum includes 
@@ -290,6 +327,22 @@ namespace Algorithms.Lib.Matrix
             for (int i = startIndex; i <= endIndex; i++)
             {
                 sum += array[i];
+            }
+            return sum;
+        }
+
+        private static long GetProduct(int[] array, int startIndex, int endIndex)
+        {
+            long sum = 1;
+            for (int i = startIndex; i <= endIndex; i++)
+            {
+                // Once the current element is ZERO then product of upcoming elements becomes ZERO.
+                if (array[i] == 0)
+                {
+                    return 0;
+                }
+
+                sum *= array[i];
             }
             return sum;
         }

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Algorithms.Lib.Tests.Matrix
+namespace Algorithms.Lib.Tests.Array
 {
     /// <summary>
     /// Test class to test the array traversal method - Traverse in Spiral order
@@ -56,6 +56,31 @@ namespace Algorithms.Lib.Tests.Matrix
 
             Assert.IsTrue(MatrixComparer.AreSame(expectedResult, actualResult));
         }
+
+        [TestMethod]
+        public void TestSpiralTraversalWithMatrix_4_X_5()
+        {
+            int[,] inputArray = new int[,] {
+                    {10, 20, 30, 40, 50},
+                    {40, 50, 10, 20, 30},
+                    {80, 90, 40, 30, 20},
+                    {120, 130, 100, 90, 80}
+                };
+
+            int[] expectedResult = new int[] {
+                10,20, 30, 40, 50,
+                30, 20, 80,
+                90, 100, 130, 120,
+                80, 40,
+                50, 10, 20,
+                30, 40, 90
+            };
+
+            var actualResult = ArrayTraversals.TraverseArrayInSpiralOrder(inputArray);
+
+            Assert.IsTrue(MatrixComparer.AreSame(expectedResult, actualResult));
+        }
+
 
         [TestMethod]
         public void TestSpiralTraversalWithMatrix_1_X_1()
