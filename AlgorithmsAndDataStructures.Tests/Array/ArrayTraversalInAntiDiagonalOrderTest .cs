@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Algorithms.Lib.Tests.Matrix
+namespace Algorithms.Lib.Tests.Array
 {
     /// <summary>
     /// Test class to test the array traversal method - Traverse by anti-diagonal order
